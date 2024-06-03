@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Merger App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1>CSV Merger App</h1>
+        <p>Please upload multiple CSV files. The app will combine them into a single CSV file.</p>
+        <input type="file" id="fileInput" multiple accept=".csv">
+        <button id="uploadButton">Upload CSV Files</button>
+        <div id="output" style="display:none;">
+            <input type="text" id="fileNameInput" placeholder="Enter desired output file name" value="combined.csv">
+            <button id="saveButton">Save Combined CSV</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
